@@ -1,0 +1,68 @@
+<h1 class="my-3 text-light">
+  Listar Produtos
+
+  <button routerLink="/produtos/cadastrar" class="btn btn-success mt-2 float-right">
+    Cadastrar
+  </button>
+</h1>
+
+<hr>
+
+<div class="card border-0 shadow">
+
+  <table class="table table-responsive table-striped">
+    <thead class="bg-dark text-light ">
+      <tr>
+
+        <th>#</th>
+        <th>Nome</th>
+        <th>Valor</th>
+        <th>Faixa Etaria</th>
+        <th>Data de Lançamento</th>
+        <th>Plataformas</th>
+        <th>Quantidade Midia Física</th>
+        <th>Ações </th>
+
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor = "let prod of listarJogos">
+
+        <td>{{ prod.id }}</td>
+        <td>{{ prod.nome }}</td>
+        <td>{{ prod.precoProduto | currency: "BRL" }}</td>
+        <td>{{ prod.faixaEtaria}} Anos</td>
+        <td>{{ prod.lancamento | date: "shortDate"}}</td>
+        <td>{{ prod.plataformas}}</td>
+        <td>{{ prod.quantidadeMF}}</td>
+        <td>
+          <button class="btn btn-secondary" routerLink="/produtos/atualizar/{{ prod.id}}">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+          </button>
+          <button class="btn btn-danger mt-2" [swal]="{
+            title: 'ATENÇÃO',
+            text: 'Deseja realmente excluir o produto: ' + prod.nome + '?',
+            showDenyButton: true,
+            denyButtonText: 'Não',
+            confirmButtonText: 'Sim, excluir',
+            icon: 'warning'
+          }"
+
+            (confirm)='deletar(prod)'>
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+          </button>
+        </td>
+
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+

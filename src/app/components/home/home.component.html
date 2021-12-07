@@ -1,0 +1,118 @@
+<!--Classe PAi-->
+
+<strong><h1 class="my-3 text-center text-light">Ofertas em destaque</h1></strong>
+<br>
+<br>
+
+<div class="row align-items-center ml-2">
+  <div class="col"></div>
+  <div class="col md-3">
+    <div class="card rounded mb-3" style="width: 20rem;">
+      <img src="assets/img/BlackF_Natal.png" class="card-img-top" alt="..." routerLink="black-natal"><!--Ex de data-bidingd de property-->
+      <div class="card-body bg-dark text-light rounded">
+        <button type="button" class="btn btn-dark border-light">
+          <h2>
+              <p class="card-text text-center text-danger" routerLink="black-natal">
+                Black Friday Natal
+              </p>
+          </h2>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col"></div>
+</div>
+
+<strong><h1 class="my-3 text-center text-light">Jogos em destaque</h1></strong>
+
+<hr>
+
+<div class="row mt-3 ml-2">
+
+  <div class="col md-3"><!--Super Mario Maker 2-->
+    <app-card-produto
+      foto='assets/img/Jogo_SMM2.jpg'
+      nomeProduto="Super Mario Maker 2"
+      [promocao]="promocao"
+      [idProduto]="4"
+      lancamento="2019-06-28"
+      [precoProduto]="299.99"
+      plataformas="Nintendo Switch"
+      [quantidadeMF]="45">
+    </app-card-produto>
+  </div>
+
+  <div class="col md-3"><!--Call of Duty Vanguard-->
+    <app-card-produto
+      foto='assets/img/Jogo_CODV.jpg'
+      nomeProduto="Call of Duty Vanguard"
+      [promocao]="promocao"
+      [idProduto]="1"
+      lancamento="2021-09-10"
+      [precoProduto]="249.99"
+      plataformas="Windows, Xbox Series X, Xbox One, PS4, PS5"
+      [quantidadeMF]="300">
+    </app-card-produto>
+  </div>
+
+  <div class="col md-3"><!--Forza Horizon 5-->
+    <app-card-produto
+      foto='assets/img/Jogo_FH5.jpg'
+      nomeProduto="Forza Horizon 5"
+      [promocao]="promocao"
+      [idProduto]="5"
+      lancamento="2021-11-04"
+      [precoProduto]="249.99"
+      plataformas="Windows, Xbox Series X, Xbox One, PS4, PS5"
+      [quantidadeMF]="350">
+    </app-card-produto>
+  </div>
+
+</div>
+<div class="row mt-2 ml-2">
+
+  <div class="col md-3"><!--Far Cry 6-->
+    <app-card-produto
+      foto='assets/img/Jogo_F6.jpg'
+      nomeProduto="Far Cry 6"
+      [promocao]="promocao"
+      [idProduto]="7"
+      lancamento="2021-10-06"
+      [precoProduto]="249.99"
+      plataformas="Windows, Xbox Series X, Xbox One, PS4, PS5"
+      [quantidadeMF]="250">
+    </app-card-produto>
+  </div>
+
+  <div class="col md-3"><!--Battlefield 2042-->
+    <app-card-produto
+      foto='assets/img/Jogo_BF2042.jpg'
+      nomeProduto="Battlefield 2042"
+      [promocao]="promocao"
+      [idProduto]="8"
+      lancamento="2021-11-19"
+      [precoProduto]="249.99"
+      plataformas="Windows, Xbox Series X, Xbox One, PS4, PS5"
+      [quantidadeMF]="280">
+    </app-card-produto>
+  </div>
+
+  <div class="col md-3"><!--FIFA 22-->
+    <app-card-produto
+      foto='assets/img/Jogo_FIFA22.jpg'
+      nomeProduto="FIFA 22"
+      [promocao]="promocao"
+      [idProduto]="9"
+      lancamento="2021-09-26"
+      [precoProduto]="249.99"
+      plataformas="Windows, Xbox Series X, Xbox One, PS4, PS5"
+      [quantidadeMF]="170">
+    </app-card-produto>
+  </div>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>

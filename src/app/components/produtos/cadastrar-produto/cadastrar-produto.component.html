@@ -1,0 +1,98 @@
+
+<h1 class="my-3 text-light">Cadastrar Produto</h1>
+
+<hr>
+
+<div class="card shadow">
+  <form class="p-3 bg-dark text-light rounded">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="nome">Nome do Jogo: </label>
+          <input type="text" class="form-control " placeholder="Digite o nome do Jogo"
+          name="nomeProduto" [(ngModel)]="produto.nome"/>
+        </div>
+      </div>
+    </div><!--Fim row nome-->
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="lancamento">Lançamento do Jogo: </label>
+          <input type="date" class="form-control"
+          name="lancamento" [(ngModel)]="produto.lancamento"/>
+        </div>
+      </div><!--Fim col validade-->
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="precoProduto">Preço do Jogo: </label>
+          <input type="number" class="form-control" placeholder="0.00" min="0"
+          name="precoProduto" [(ngModel)]="produto.precoProduto"/>
+        </div>
+      </div><!--Fim col preço-->
+    </div><!--Fim row validade e preço-->
+
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="faixaEtaria">Faixa Etaria: </label>
+        <input type="number" class="form-control" placeholder="0" min="0" max="18"
+        name="faixaEtaria" [(ngModel)]="produto.faixaEtaria"/>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="quantidadeMF">Quantidade Midia Física: </label>
+        <input type="number" class="form-control" placeholder="0" min="0" max="1000"
+        name="quantidadeMF" [(ngModel)]="produto.quantidadeMF"/>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-12">
+      <div class="form-group">
+        <label for="plataformas">Plataformas: </label>
+        <input type="text" class="form-control" placeholder="Digite as plataformas do Jogo"
+        name="plataformas" [(ngModel)]="produto.plataformas"/>
+      </div>
+    </div>
+
+  </div>
+
+
+    <div class="row">
+
+      <div class="col">
+        <button type="button" class="btn btn mt-3 text-light" routerLink="/produtos">Voltar</button>
+     </div><!--Fim col button voltar-->
+
+
+      <div class="col">
+        <button type="button" class="btn btn-success mt-3 float-right" (click)="salvarProduto()">Salvar</button>
+      </div><!--Fim col button salvar-->
+
+    </div><!--Fim row-->
+  </form>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

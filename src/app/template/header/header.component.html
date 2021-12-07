@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <strong><a class="navbar-brand text-warning" href="#" routerLink="/sobre">Loja KJogos</a></strong>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+      <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <strong><a class="nav-link text-danger" routerLink="/black-natal">Black Friday Natal <span class="sr-only">(current)</span></a></strong>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Jogos
+        </a>
+        <div class="dropdown-menu bg-dark text-dark" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item text-light bg-secondary" routerLink="/produtos">Listar Produtos</a>
+          <a class="dropdown-item text-light bg-secondary" routerLink="/produtos/cadastrar">Cadastrar Produtos</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-light my-2 my-sm-0" routerLink="/carrinho" type="submit" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+    </form>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-info my-2 my-sm-0 ml-2" type="submit"><i class="fa fa-user" aria-hidden="true"></i></button>
+    </form>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-primary my-2 my-sm-0 ml-2" type="submit">SAIR</button>
+    </form>
+  </div>
+</nav>

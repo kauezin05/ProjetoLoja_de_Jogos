@@ -1,0 +1,21 @@
+<!--Classe filha-->
+  <div class="card rounded" style="width: 20rem;">
+    <img [src]="foto" class="card-img-top" alt="..."><!--Ex de data-bidingd de property-->
+    <div class="card-body bg-dark text-light rounded">
+      <h5 class="card-title">{{nomeProduto | uppercase}}</h5>
+      <span *ngIf="promocao; else elseBlock" class="badge badge-success">Promoção</span><!--Ex de ngIf, de verdade ou falso-->
+      <ng-template #elseBlock>
+        <span class="badge badge-primary">Aproveite</span>
+      </ng-template>
+      <p class="card-text">
+        Identificação: {{idProduto | number: '2.0-0'}}<!--Ex de data-binding de interpolação--> <!--data-binding = ligação de dados-->
+        <br>
+        Lançamento: {{lancamento | date: 'shortDate'}}
+        <br>
+        Plataformas: {{plataformas}}
+        <br>
+        Quantidade Midia Física: {{quantidadeMF | number: '2.0-0'}}
+      </p>
+      <a href="#" class="btn btn-primary">{{precoProduto | currency: 'BRL' }}</a>
+    </div>
+  </div>
