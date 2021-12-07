@@ -1,0 +1,112 @@
+{
+  "Jogos": [
+    {
+      "id": 1,
+      "nome": "Call of Duty Vanguard",
+      "precoProduto": 249.99,
+      "faixaEtaria": 16,
+      "lancamento": "2021-09-10",
+      "plataformas": "Windows, Xbox Series X, Xbox One, PS4, PS5",
+      "quantidadeMF": 300
+    },
+    {
+      "id": 2,
+      "nome": "Street Fighter V",
+      "precoProduto": 39.99,
+      "faixaEtaria": 14,
+      "lancamento": "2016-02-16",
+      "plataformas": "Windows, Xbox One, PS4",
+      "quantidadeMF": 60
+    },
+    {
+      "id": 3,
+      "nome": "Mortal Kombat 11",
+      "precoProduto": 99.99,
+      "faixaEtaria": 18,
+      "lancamento": "2019-04-22",
+      "plataformas": "Windows, Xbox Series X, Xbox One, PS4, PS5",
+      "quantidadeMF": 30
+    },
+    {
+      "id": 4,
+      "nome": "Super Mario Maker 2",
+      "precoProduto": 299.99,
+      "faixaEtaria": 10,
+      "lancamento": "2019-06-28",
+      "plataformas": "Nintendo Switch",
+      "quantidadeMF": 45
+    },
+    {
+      "id": 5,
+      "nome": "Forza Horizon 5",
+      "precoProduto": 249,
+      "faixaEtaria": 0,
+      "lancamento": "2021-11-04",
+      "plataformas": "Windows, Xbox Series X, Xbox One, PS4, PS5",
+      "quantidadeMF": 350
+    },
+    {
+      "nome": "Assassin's Creed Origins",
+      "precoProduto": 89.99,
+      "faixaEtaria": 16,
+      "lancamento": "2017-10-27",
+      "id": 6,
+      "plataformas": "Windows, Xbox One, PS4",
+      "quantidadeMF": 70
+    },
+    {
+      "nome": "Far Cry 6",
+      "precoProduto": 249.99,
+      "faixaEtaria": 18,
+      "lancamento": "2021-10-06",
+      "id": 7,
+      "plataformas": "Windows, Xbox Series X, Xbox One, PS4, PS5",
+      "quantidadeMF": 250
+    },
+    {
+      "nome": "Battlefield 2042",
+      "precoProduto": 249.99,
+      "faixaEtaria": 16,
+      "lancamento": "2021-11-19",
+      "id": 8,
+      "plataformas": "Windows, Xbox Series X, Xbox One, PS4, PS5",
+      "quantidadeMF": 280
+    },
+    {
+      "nome": "FIFA 22",
+      "precoProduto": 249.99,
+      "faixaEtaria": 0,
+      "lancamento": "2021-09-26",
+      "id": 9,
+      "plataformas": "Windows, Xbox Series X, Xbox One, PS4, PS5",
+      "quantidadeMF": 170
+    },
+    {
+      "nome": "Overwatch",
+      "precoProduto": 50,
+      "faixaEtaria": 14,
+      "lancamento": "2016-05-03",
+      "plataformas": "Windows, Xbox One, PS4",
+      "quantidadeMF": 65,
+      "id": 10
+    },
+    {
+      "nome": "Far Cry 4",
+      "precoProduto": 45,
+      "faixaEtaria": 16,
+      "lancamento": "2014-11-18",
+      "plataformas": "Windows, Xbox One, Xbox 360, PS4, PS3",
+      "quantidadeMF": 30,
+      "id": 11
+    },
+    {
+      "nome": "Call of Duty Cold War",
+      "precoProduto": 180,
+      "faixaEtaria": 16,
+      "lancamento": "2020-11-13",
+      "plataformas": "Windows, Xbox Series X, Xbox One, PS4, PS5",
+      "quantidadeMF": 120,
+      "id": 12
+    }
+  ]
+}
