@@ -1,4 +1,4 @@
-<h1 class="my-3 text-light">
+<h1 class="my-3 text-light"><!--Titulo da página de lista de produtos e botão para cadastrar-->
   Listar Produtos
 
   <button routerLink="/produtos/cadastrar" class="btn btn-success mt-2 float-right">
@@ -10,7 +10,7 @@
 
 <div class="card border-0 shadow">
 
-  <table class="table table-responsive table-striped">
+  <table class="table table-responsive table-striped"> <!--Tabela para listar os produtos-->
     <thead class="bg-dark text-light ">
       <tr>
 
@@ -24,7 +24,7 @@
         <th>Ações </th>
 
       </tr>
-    </thead>
+    </thead><!--Fim do head da tabela-->
 
     <tbody>
 
@@ -48,18 +48,18 @@
             denyButtonText: 'Não',
             confirmButtonText: 'Sim, excluir',
             icon: 'warning'
-          }"
+          }" (confirm)='deletar(prod)'>
 
-            (confirm)='deletar(prod)'>
             <i class="fa fa-trash-o" aria-hidden="true"></i>
+
           </button>
         </td>
 
       </tr>
 
-    </tbody>
-  </table>
-</div>
+    </tbody><!--Fim do body da tabela-->
+  </table><!--Fim da tabela-->
+</div><!--Fim do card-->
 <br>
 <br>
 <br>

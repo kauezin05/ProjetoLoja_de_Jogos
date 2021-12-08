@@ -6,9 +6,9 @@ export interface IJogo{
   id?: number;
   nome: string;
   precoProduto: number;
-  faixaEtaria: number;
-  lancamento: Date;
-  plataformas: string;
+  faixaEtaria: number;// idade para jogar o Jogo
+  lancamento: Date;// data de lançamento do Jogo
+  plataformas: string;//plataformas que podem rodar o Jogo
   quantidadeMF: number; //quantidade Midia física
 
 
